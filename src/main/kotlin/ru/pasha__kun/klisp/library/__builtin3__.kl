@@ -1,0 +1,11 @@
+begin
+
+(define defmr (macro [name args]
+    (define name (macro args ...))))
+
+(defmr defn [name args]
+    (define name (lambda args ...)))
+
+(export
+    defmr:defmr
+    defn:defn)

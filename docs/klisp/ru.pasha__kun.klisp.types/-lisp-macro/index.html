@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LispMacro - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp.types</a>&nbsp;/&nbsp;<a href=".">LispMacro</a><br/>
+<br/>
+<h1>LispMacro</h1>
+<code><span class="keyword">class </span><span class="identifier">LispMacro</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-lisp-value/index.html"><span class="identifier">LispValue</span></a></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/types/types.kt#L61">(source)</a>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-init-.html">&lt;init&gt;</a></td>
+<td>
+<code><span class="identifier">LispMacro</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$<init>(ru.pasha__kun.klisp.types.LispArray, ru.pasha__kun.klisp.types.LispValue)/args">args</span><span class="symbol">:</span>&nbsp;<a href="../-lisp-array/index.html"><span class="identifier">LispArray</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$<init>(ru.pasha__kun.klisp.types.LispArray, ru.pasha__kun.klisp.types.LispValue)/body">body</span><span class="symbol">:</span>&nbsp;<a href="../-lisp-value/index.html"><span class="identifier">LispValue</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="args.html">args</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">args</span><span class="symbol">: </span><a href="../-lisp-array/index.html"><span class="identifier">LispArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<a href="body.html">body</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">body</span><span class="symbol">: </span><a href="../-lisp-value/index.html"><span class="identifier">LispValue</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="boolean.html">boolean</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">boolean</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<a href="call.html">call</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">call</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/args">args</span><span class="symbol">:</span>&nbsp;<a href="../-lisp-list/index.html"><span class="identifier">LispList</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/strict">strict</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/env">env</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-environment/index.html"><span class="identifier">Environment</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispMacro$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/inter">inter</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-lisp-interpreter/index.html"><span class="identifier">LispInterpreter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-lisp-value/index.html"><span class="identifier">LispValue</span></a></code>
+<p>Вызывается при вызове объекта.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../-lisp-value/eval.html">eval</a></td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">eval</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$eval(kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/strict">strict</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$eval(kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/env">env</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-environment/index.html"><span class="identifier">Environment</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$eval(kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/inter">inter</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-lisp-interpreter/index.html"><span class="identifier">LispInterpreter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-lisp-value/index.html"><span class="identifier">LispValue</span></a></code>
+<p>Вызывается для выполнения объекта.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

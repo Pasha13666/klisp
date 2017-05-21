@@ -1,0 +1,200 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Token - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp</a>&nbsp;/&nbsp;<a href=".">Token</a><br/>
+<br/>
+<h1>Token</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Token</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Any</span></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/Token.kt#L6">(source)</a>
+<p>Токен парсера.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-a-r-r-a-y.html">CLOSE_ARRAY</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_ARRAY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ ']'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-l-i-s-t.html">CLOSE_LIST</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_LIST</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ ')'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-m-a-p.html">CLOSE_MAP</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_MAP</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '}'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-k-e-y/index.html">KEY</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KEY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Значение типа "Ключ".</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-n-a-m-e/index.html">NAME</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NAME</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символьное значение (имя).</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-n-u-m-b-e-r/index.html">NUMBER</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NUMBER</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Числовое значение.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-a-r-r-a-y.html">OPEN_ARRAY</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_ARRAY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '['.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-l-i-s-t.html">OPEN_LIST</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_LIST</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '('.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-m-a-p.html">OPEN_MAP</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_MAP</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '{'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-q-u-o-t-e.html">QUOTE</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">QUOTE</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '''.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-s-t-r-i-n-g/index.html">STRING</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">STRING</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Строковое значение.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-a-r-r-a-y.html">CLOSE_ARRAY</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_ARRAY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ ']'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-l-i-s-t.html">CLOSE_LIST</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_LIST</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ ')'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-c-l-o-s-e_-m-a-p.html">CLOSE_MAP</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">CLOSE_MAP</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '}'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-k-e-y/index.html">KEY</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">KEY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Значение типа "Ключ".</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-n-a-m-e/index.html">NAME</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NAME</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символьное значение (имя).</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-n-u-m-b-e-r/index.html">NUMBER</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">NUMBER</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Числовое значение.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-a-r-r-a-y.html">OPEN_ARRAY</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_ARRAY</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '['.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-l-i-s-t.html">OPEN_LIST</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_LIST</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '('.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-o-p-e-n_-m-a-p.html">OPEN_MAP</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">OPEN_MAP</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '{'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-q-u-o-t-e.html">QUOTE</a></td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">QUOTE</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Символ '''.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="-s-t-r-i-n-g/index.html">STRING</a></td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">STRING</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Token</span></code>
+<p>Строковое значение.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

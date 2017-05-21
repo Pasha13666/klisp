@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LispValue.call - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp.types</a>&nbsp;/&nbsp;<a href="index.html">LispValue</a>&nbsp;/&nbsp;<a href=".">call</a><br/>
+<br/>
+<h1>call</h1>
+<a name="ru.pasha__kun.klisp.types.LispValue$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">call</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/args">args</span><span class="symbol">:</span>&nbsp;<a href="../-lisp-list/index.html"><span class="identifier">LispList</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/strict">strict</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/env">env</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-environment/index.html"><span class="identifier">Environment</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.types.LispValue$call(ru.pasha__kun.klisp.types.LispList, kotlin.Boolean, ru.pasha__kun.klisp.Environment, ru.pasha__kun.klisp.LispInterpreter)/inter">inter</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp/-lisp-interpreter/index.html"><span class="identifier">LispInterpreter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">LispValue</span></a></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/types/LispValue.kt#L29">(source)</a>
+<p>Вызывается при вызове объекта.</p>
+<p>(fun 1 2 3) //=&gt; .call(LispList(&lt;1 2 3&gt;), strict, env, inter)</p>
+<h3>Parameters</h3>
+
+<p><a name="args"></a>
+<code>args</code> - Аргументы функции
+<p><a name="strict"></a>
+<code>strict</code> - Строгий вызов функций
+<p><a name="env"></a>
+<code>env</code> - Окружение выполнения
+<p><a name="inter"></a>
+<code>inter</code> - Объект интерпретатора
+</BODY>
+</HTML>

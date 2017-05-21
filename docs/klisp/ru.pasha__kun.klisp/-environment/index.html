@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Environment - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp</a>&nbsp;/&nbsp;<a href=".">Environment</a><br/>
+<br/>
+<h1>Environment</h1>
+<code><span class="keyword">class </span><span class="identifier">Environment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Any</span></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/Environment.kt#L10">(source)</a>
+<p>Класс окружения вызовов - иерархическая стругтура для хранения переменнх.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-init-.html">&lt;init&gt;</a></td>
+<td>
+<code><span class="identifier">Environment</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="parent.html">parent</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">parent</span><span class="symbol">: </span><span class="identifier">Environment</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="get.html">get</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.Environment$get(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ru.pasha__kun.klisp.types/-lisp-value/index.html"><span class="identifier">LispValue</span></a></code></td>
+</tr>
+<tr>
+<td>
+<a href="load-from.html">loadFrom</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadFrom</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.Environment$loadFrom(ru.pasha__kun.klisp.types.LispMap)/m">m</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp.types/-lisp-map/index.html"><span class="identifier">LispMap</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../ru.pasha__kun.klisp.types/-lisp-map/index.html"><span class="identifier">LispMap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<a href="make-child.html">makeChild</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">makeChild</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Environment</span></code>
+<p>Создает новое окружение, у которого <a href="parent.html">parent</a> == this.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="set.html">set</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.Environment$set(kotlin.String, ru.pasha__kun.klisp.types.LispValue)/key">key</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.Environment$set(kotlin.String, ru.pasha__kun.klisp.types.LispValue)/value">value</span><span class="symbol">:</span>&nbsp;<a href="../../ru.pasha__kun.klisp.types/-lisp-value/index.html"><span class="identifier">LispValue</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Заменяет переменную с имянем <a href="set.html#ru.pasha__kun.klisp.Environment$set(kotlin.String, ru.pasha__kun.klisp.types.LispValue)/key">key</a> на значение <a href="set.html#ru.pasha__kun.klisp.Environment$set(kotlin.String, ru.pasha__kun.klisp.types.LispValue)/value">value</a> в текущем и родительских окружениях.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-string.html">toString</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

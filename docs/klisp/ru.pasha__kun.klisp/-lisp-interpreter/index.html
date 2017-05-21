@@ -1,0 +1,164 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LispInterpreter - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp</a>&nbsp;/&nbsp;<a href=".">LispInterpreter</a><br/>
+<br/>
+<h1>LispInterpreter</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">LispInterpreter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Any</span></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/LispInterpreter.kt#L14">(source)</a>
+<p>Главный класс интерпретатора.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-init-.html">&lt;init&gt;</a></td>
+<td>
+<code><span class="identifier">LispInterpreter</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Главный класс интерпретатора.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="async.html">async</a></td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">async</span><span class="symbol">: </span><span class="identifier">Boolean</span></code></td>
+</tr>
+<tr>
+<td>
+<a href="environment-level.html">environmentLevel</a></td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">environmentLevel</span><span class="symbol">: </span><span class="identifier">Int</span></code>
+<p>"Уровень" окружения - целое число от 0 до 100, определяющее функции стандартной библиотеки.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="internal-path.html">internalPath</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">internalPath</span><span class="symbol">: </span><span class="identifier">MutableList</span><span class="symbol">&lt;</span><span class="identifier">String</span><span class="symbol">&gt;</span></code>
+<p>Пути пойска библиотек для импорта из classpath.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="native-path.html">nativePath</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nativePath</span><span class="symbol">: </span><span class="identifier">MutableList</span><span class="symbol">&lt;</span><span class="identifier">String</span><span class="symbol">&gt;</span></code>
+<p>Пути пойска нативных библиотек для импорта из classpath.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="path.html">path</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">path</span><span class="symbol">: </span><a href="../-import-path/index.html"><span class="identifier">ImportPath</span></a></code>
+<p>Пути пойска библиотек для импорта.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="clear-import-cache.html">clearImportCache</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearImportCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Очищает кеш импорта модулей.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="import-module.html">importModule</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">importModule</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$importModule(kotlin.String, ru.pasha__kun.klisp.Environment, kotlin.Boolean)/name">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$importModule(kotlin.String, ru.pasha__kun.klisp.Environment, kotlin.Boolean)/env">env</span><span class="symbol">:</span>&nbsp;<a href="../-environment/index.html"><span class="identifier">Environment</span></a><span class="symbol">, </span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$importModule(kotlin.String, ru.pasha__kun.klisp.Environment, kotlin.Boolean)/cache">cache</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="../../ru.pasha__kun.klisp.types/-lisp-map/index.html"><span class="identifier">LispMap</span></a></code>
+<p>Импортирует модуль с имянем <a href="import-module.html#ru.pasha__kun.klisp.LispInterpreter$importModule(kotlin.String, ru.pasha__kun.klisp.Environment, kotlin.Boolean)/name">name</a> в окружение <a href="import-module.html#ru.pasha__kun.klisp.LispInterpreter$importModule(kotlin.String, ru.pasha__kun.klisp.Environment, kotlin.Boolean)/env">env</a> и возвращает таблицу его функций.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="make-env-for-level.html">makeEnvForLevel</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">makeEnvForLevel</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$makeEnvForLevel(kotlin.Int)/level">level</span><span class="symbol">:</span>&nbsp;<span class="identifier">Int</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-environment/index.html"><span class="identifier">Environment</span></a></code>
+<p>Создает окружение для данного уровня <a href="make-env-for-level.html#ru.pasha__kun.klisp.LispInterpreter$makeEnvForLevel(kotlin.Int)/level">level</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="name2class.html">name2class</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">name2class</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$name2class(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Переводит имя модуля в имя класса для импорта нативного модуля.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="new-root-environment.html">newRootEnvironment</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newRootEnvironment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-environment/index.html"><span class="identifier">Environment</span></a></code>
+<p>Создает новое корневое окружение.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="parse.html">parse</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parse</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$parse(kotlin.collections.Iterable((ru.pasha__kun.klisp.Token)))/inp">inp</span><span class="symbol">:</span>&nbsp;<span class="identifier">Iterable</span><span class="symbol">&lt;</span><a href="../-token/index.html"><span class="identifier">Token</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../ru.pasha__kun.klisp.types/-lisp-value/index.html"><span class="identifier">LispValue</span></a></code>
+<p>Парсит значение из токенов.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="tokenize.html">tokenize</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tokenize</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$tokenize(java.io.Reader)/input">input</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Iterable</span><span class="symbol">&lt;</span><a href="../-token/index.html"><span class="identifier">Token</span></a><span class="symbol">&gt;</span></code>
+<p>Разбивает поток на токены. Метот разбития зависит от <a href="async.html">async</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="tokenize-async.html">tokenizeAsync</a></td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">tokenizeAsync</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$tokenizeAsync(java.io.Reader)/input">input</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Iterable</span><span class="symbol">&lt;</span><a href="../-token/index.html"><span class="identifier">Token</span></a><span class="symbol">&gt;</span></code>
+<p>Асинхронно разбивает поток на токены.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="tokenize-sync.html">tokenizeSync</a></td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">tokenizeSync</span><span class="symbol">(</span><span class="identifier" id="ru.pasha__kun.klisp.LispInterpreter$tokenizeSync(java.io.Reader)/input">input</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/Reader.html"><span class="identifier">Reader</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../-token/index.html"><span class="identifier">Token</span></a><span class="symbol">&gt;</span></code>
+<p>Синхронно разбивает поток на токены.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="-b-u-i-l-t-i-n_-n-a-t-i-v-e_-m-o-d-u-l-e-s.html">BUILTIN_NATIVE_MODULES</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">BUILTIN_NATIVE_MODULES</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<a href="-b-u-i-l-t-i-n_-n-a-t-i-v-e_-t-y-p-e-s.html">BUILTIN_NATIVE_TYPES</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">BUILTIN_NATIVE_TYPES</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

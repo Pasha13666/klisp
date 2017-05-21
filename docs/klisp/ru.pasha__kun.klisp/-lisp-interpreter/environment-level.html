@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LispInterpreter.environmentLevel - klisp</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">klisp</a>&nbsp;/&nbsp;<a href="../index.html">ru.pasha__kun.klisp</a>&nbsp;/&nbsp;<a href="index.html">LispInterpreter</a>&nbsp;/&nbsp;<a href=".">environmentLevel</a><br/>
+<br/>
+<h1>environmentLevel</h1>
+<a name="ru.pasha__kun.klisp.LispInterpreter$environmentLevel"></a>
+<code><span class="keyword">var </span><span class="identifier">environmentLevel</span><span class="symbol">: </span><span class="identifier">Int</span></code> <a href="https://github.com/Pasha13666/klisp/blob/master/src/main/kotlin/ru/pasha__kun/klisp/LispInterpreter.kt#L41">(source)</a>
+<p>"Уровень" окружения - целое число от 0 до 100, определяющее функции стандартной библиотеки.</p>
+<p>0 - Без стандартной библиотеки
+1 - Только базовый синтаксис (lambda, define, macro, set)
+2 - + Базовые функции (*, -, ++)
+3 - + Дополнительный синтаксис (циклы, условия)
+4 - + Конструкторы типов и import
+5 - + Стандартные библиотеки типов
+6 - + Базовые библиотеки (io, network)
+7 - + Библиотека нативных вызовов (call-java)
+8 - + Библиотека отладки (debug)
+9 - Автоимпорт всех нативных библиотек.
+10 - Автоимпорт всех библиотек из <a href="path.html">path</a>.</p>
+</BODY>
+</HTML>
